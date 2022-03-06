@@ -11,7 +11,7 @@ Only run this on z/OS (obviously)...
 Even though 'in memory' the symbols are stored as `&SYSPLEX.` this modules uses `SYSPLEX`
 
 ### symbol(symbolName)
-Returns the value for the symbol, or False is symbol not present
+Returns the value for the symbol, or False if symbol not present.
 
     s = SYMBOLS()
     sysplex = s.symbol('SYSPLEX')
