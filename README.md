@@ -6,6 +6,9 @@ Only run this on z/OS (obviously)...
 
     s = SYMBOLS()
     sysplex = s.symbol('SYSPLEX')
+    
+
+![Usage](https://github.com/wizardofzos/pysymbols/raw/main/symbols.gif)
 
 ## TODO
 
