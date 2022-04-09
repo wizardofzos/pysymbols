@@ -33,6 +33,15 @@ class SYMBOLS:
       self._symbols[symname] = valname
 
   def symbol(self, symbol):
+     """Will return the value of a SYSTEM SYMBOL. Returns "False" if SYMBOL not present
+
+    Args:
+        symbol (str): The symbol name you want to query (e.g. SYSPLEX)
+
+    Returns:
+        str: The symbol value. False if symbol not defined
+
+    """
     if symbol[0] != '&' and symbol[-1] != '.':
       symbol = '&' + symbol + '.'
     if symbol in self._symbols:
